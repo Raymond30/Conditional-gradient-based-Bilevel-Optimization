@@ -95,14 +95,15 @@ def DBGD(fun_f, grad_f, grad_g, fun_g, TSA, param, x0, phi_type):
     d_vec = []
     weight_vec = []
     iter_count = 0
+    iter_count_vec = []
     print(f"Starting DBGD with {phi_type} ")
     while iter_count <= maxiter:
         x_prev = x
         current_time = time.time() - start_time
-        if current_time >= maxtime:
-            print(f"Stopping at time {current_time:.2f}s")
-            break
-            
+        # if current_time >= maxtime:
+        #     print(f"Stopping at time {current_time:.2f}s")
+        #     break
+        iter_count_vec.append(iter_count)
         iter_count += 1
         
         grad_f_x = grad_f(x)
@@ -130,7 +131,7 @@ def DBGD(fun_f, grad_f, grad_g, fun_g, TSA, param, x0, phi_type):
         
         f_vec1.append(fun_f(x))
         g_vec1.append(fun_g(x))
-        d_vec.append(np.linalg.norm(v))
+        d_vec.append(np.linalg.norm(v)**2)
         time_vec1.append(current_time)
         acc_vec.append(TSA(x))
         
@@ -138,7 +139,7 @@ def DBGD(fun_f, grad_f, grad_g, fun_g, TSA, param, x0, phi_type):
             print(f"Iteration: {iter_count}, Time: {current_time:.2f}s")
     
     return (np.array(f_vec1), np.array(g_vec1), np.array(time_vec1), 
-            x, np.array(acc_vec), np.array(d_vec), np.array(grad_f_vec), np.array(grad_g_vec), np.array(weight_vec))
+            x, np.array(acc_vec), np.array(d_vec), np.array(grad_f_vec), np.array(grad_g_vec), np.array(weight_vec), np.array(iter_count_vec))
 
 def main():
     # Add device configuration at the start
@@ -231,7 +232,7 @@ def main():
         'alpha': 1,
         'beta': 1,
         'lam': 1,
-        'maxiter': int(1e7),
+        'maxiter': int(1e4),
         'maxtime': 10
     }
 
@@ -240,17 +241,18 @@ def main():
     total_params = sum(p.numel() for p in model_f.parameters())
     init_scale = 0
     # x0 = init_scale * np.ones(total_params)
-    x0 = np.random.randn(total_params) * 0.01
+    # x0 = np.random.randn(total_params) 
+    x0 = np.zeros(total_params)
 
     # Run DBGD
     print('DBGD Algorithm starts')
     
-    f_vec, g_vec, time_vec, x_final, tsa_vec, d_vec, grad_f_vec, grad_g_vec, weight_vec = DBGD(
+    f_vec, g_vec, time_vec, x_final, tsa_vec, d_vec, grad_f_vec, grad_g_vec, weight_vec, iter_count_vec = DBGD(
         fun_f, grad_f, grad_g, fun_g, TSA_LS, param, x0, phi_type
     )
     print('DBGD Solution Achieved!')
     # Calculate norm of grad_g at each iteration
-    grad_g_norm = [np.linalg.norm(g) for g in grad_g_vec]
+    grad_g_norm = [np.linalg.norm(g)**2 for g in grad_g_vec]
     grad_f_norm = [np.linalg.norm(f) for f in grad_f_vec]
     # weight_norm = [np.linalg.norm(w) for w in weight_vec]
     
@@ -260,56 +262,56 @@ def main():
 
 
     plt.subplot(6, 1, 1)
-    plt.semilogy(time_vec, d_vec, '-')
-    plt.ylabel('||d_k||')
-    plt.xlabel('time (s)')
-    plt.title('||x_k - x_{k-1}||')
+    plt.loglog(iter_count_vec, d_vec, '-')
+    plt.ylabel('||d_k||^2, log scale')
+    plt.xlabel('iteration log scale')
+    plt.title('||d_k||^2')
     plt.grid(True)
-    plt.xlim(0, param['maxtime'])
+    plt.xlim(0, param['maxiter'])
     print(d_vec)
 
     plt.subplot(6, 1, 2)
-    plt.semilogy(time_vec, grad_f_norm, '-')
-    plt.ylabel('||grad_f(βk)||')
-    plt.xlabel('time (s)')
+    plt.loglog(iter_count_vec, grad_f_norm, '-')
+    plt.ylabel('||grad_f(βk)||, log scale')
+    plt.xlabel('iteration log scale')
     plt.title('||grad_f(βk)||')
     plt.grid(True)
-    plt.xlim(0, param['maxtime'])
+    plt.xlim(0, param['maxiter'])
 
 
     plt.subplot(6, 1, 3)
-    plt.semilogy(time_vec, grad_g_norm, '-')
-    plt.ylabel('||grad_g(βk)||')
-    plt.xlabel('time (s)')
-    plt.title('||grad_g(βk)||')
+    plt.loglog(iter_count_vec, grad_g_norm, '-')
+    plt.ylabel('||grad_g(βk)||^2, log scale')
+    plt.xlabel('iteration log scale')
+    plt.title('||grad_g(βk)||^2')
     plt.grid(True)
-    plt.xlim(0, param['maxtime'])
+    plt.xlim(0, param['maxiter'])
 
 
 
     plt.subplot(6, 1, 4)
-    plt.semilogy(time_vec, f_vec, '-')
-    plt.ylabel('f(βk)')
-    plt.xlabel('time (s)')
+    plt.loglog(iter_count_vec, f_vec, '-')
+    plt.ylabel('f(βk), log scale')
+    plt.xlabel('iteration log scale')
     plt.title('f(βk)')
     plt.grid(True)
-    plt.xlim(0, param['maxtime'])
+    plt.xlim(0, param['maxiter'])
 
     plt.subplot(6, 1, 5)
-    plt.semilogy(time_vec, g_vec, '-')
-    plt.ylabel('g(βk)')
-    plt.xlabel('time (s)')
+    plt.loglog(iter_count_vec, g_vec, '-')
+    plt.ylabel('g(βk), log scale')
+    plt.xlabel('iteration log scale')
     plt.title('g(βk)')
     plt.grid(True)
-    plt.xlim(0, param['maxtime'])
+    plt.xlim(0, param['maxiter'])
 
     plt.subplot(6, 1, 6)
-    plt.semilogy(time_vec, weight_vec, '-')
-    plt.ylabel('weight')
-    plt.xlabel('time (s)')
+    plt.loglog(iter_count_vec, weight_vec, '-')
+    plt.ylabel('weight, log scale')
+    plt.xlabel('iteration log scale')
     plt.title('weight')
     plt.grid(True)
-    plt.xlim(0, param['maxtime'])
+    plt.xlim(0, param['maxiter'])
 
     # # Lower-level gap plot
     # plt.subplot(3, 1, 1)
