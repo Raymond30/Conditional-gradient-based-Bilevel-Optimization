@@ -1,0 +1,12 @@
+over_parameterized_python/data/
+
+# PyTorch model and checkpoint files
+over_parameterized_python/*.pt
+
+# Generated plots
+over_parameterized_python/*.png
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
