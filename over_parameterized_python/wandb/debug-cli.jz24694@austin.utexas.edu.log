@@ -1,0 +1,515 @@
+2025-02-19 21:11:20 INFO Running runs: []
+2025-02-19 21:11:27 INFO Agent received command: run
+2025-02-19 21:11:27 INFO Agent starting run with config:
+	batch_size: 256
+	epochs: 100
+	learning_rate: 0.022461280038913
+	optimization.ema_decay: 0.15908934151756274
+	optimization.lambda_aux: 0.7559757226666352
+	weight_decay: 0.1
+2025-02-19 21:11:27 INFO About to run command: python Bloop.py batch_size=256 epochs=100 learning_rate=0.022461280038913 optimization.ema_decay=0.15908934151756274 optimization.lambda_aux=0.7559757226666352 weight_decay=0.1 wandb.log=true rseed=99
+2025-02-19 21:11:32 INFO Running runs: ['x9lm4v4i']
+2025-02-19 21:11:32 INFO Cleaning up finished run: x9lm4v4i
+2025-02-19 21:11:34 INFO Agent received command: run
+2025-02-19 21:11:34 INFO Agent starting run with config:
+	batch_size: 512
+	epochs: 100
+	learning_rate: 0.00018614224286187255
+	optimization.ema_decay: 0.1669894632884325
+	optimization.lambda_aux: 0.36774221063592494
+	weight_decay: 0.1
+2025-02-19 21:11:34 INFO About to run command: python Bloop.py batch_size=512 epochs=100 learning_rate=0.00018614224286187255 optimization.ema_decay=0.1669894632884325 optimization.lambda_aux=0.36774221063592494 weight_decay=0.1 wandb.log=true rseed=99
+2025-02-19 21:11:39 INFO Running runs: ['t4unl19b']
+2025-02-19 21:11:39 INFO Cleaning up finished run: t4unl19b
+2025-02-19 21:11:40 INFO Agent received command: run
+2025-02-19 21:11:40 INFO Agent starting run with config:
+	batch_size: 256
+	epochs: 100
+	learning_rate: 0.0009918781170665698
+	optimization.ema_decay: 0.18499677053610153
+	optimization.lambda_aux: 0.7188203484348501
+	weight_decay: 0.01
+2025-02-19 21:11:40 INFO About to run command: python Bloop.py batch_size=256 epochs=100 learning_rate=0.0009918781170665698 optimization.ema_decay=0.18499677053610153 optimization.lambda_aux=0.7188203484348501 weight_decay=0.01 wandb.log=true rseed=99
+2025-02-19 21:11:45 INFO Running runs: ['surtge2j']
+2025-02-19 21:11:45 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2025-02-19 21:11:45 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2025-02-19 21:14:44 INFO Running runs: []
+2025-02-19 21:14:44 INFO Agent received command: run
+2025-02-19 21:14:44 INFO Agent starting run with config:
+	batch_size: 256
+	epochs: 100
+	learning_rate: 0.008985818079842875
+	optimization.ema_decay: 0.06532699918650738
+	optimization.lambda_aux: 0.569913405455126
+	weight_decay: 0.1
+2025-02-19 21:14:44 INFO About to run command: python Bloop.py ++batch_size=${batch_size} ++epochs=${epochs} ++learning_rate=${learning_rate} ++weight_decay=${weight_decay} ++optimization.lambda_aux=${optimization.lambda_aux} ++optimization.ema_decay=${optimization.ema_decay} ++wandb.log=true ++rseed=99
+2025-02-19 21:14:49 INFO Running runs: ['mtia2mk7']
+2025-02-19 21:14:49 INFO Cleaning up finished run: mtia2mk7
+2025-02-19 21:14:49 INFO Agent received command: run
+2025-02-19 21:14:49 INFO Agent starting run with config:
+	batch_size: 512
+	epochs: 100
+	learning_rate: 0.0002646889630618923
+	optimization.ema_decay: 0.01498130186320484
+	optimization.lambda_aux: 0.5387654293234766
+	weight_decay: 0.001
+2025-02-19 21:14:49 INFO About to run command: python Bloop.py ++batch_size=${batch_size} ++epochs=${epochs} ++learning_rate=${learning_rate} ++weight_decay=${weight_decay} ++optimization.lambda_aux=${optimization.lambda_aux} ++optimization.ema_decay=${optimization.ema_decay} ++wandb.log=true ++rseed=99
+2025-02-19 21:14:54 INFO Running runs: ['rvqekxn0']
+2025-02-19 21:14:54 INFO Cleaning up finished run: rvqekxn0
+2025-02-19 21:14:55 INFO Agent received command: run
+2025-02-19 21:14:55 INFO Agent starting run with config:
+	batch_size: 256
+	epochs: 100
+	learning_rate: 0.0009179144320717928
+	optimization.ema_decay: 0.0939482159933646
+	optimization.lambda_aux: 0.4202247889542088
+	weight_decay: 0.1
+2025-02-19 21:14:55 INFO About to run command: python Bloop.py ++batch_size=${batch_size} ++epochs=${epochs} ++learning_rate=${learning_rate} ++weight_decay=${weight_decay} ++optimization.lambda_aux=${optimization.lambda_aux} ++optimization.ema_decay=${optimization.ema_decay} ++wandb.log=true ++rseed=99
+2025-02-19 21:15:00 INFO Running runs: ['f0uqgmmo']
+2025-02-19 21:15:00 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2025-02-19 21:15:00 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2025-02-19 21:16:15 INFO Running runs: []
+2025-02-19 21:16:15 INFO Agent received command: run
+2025-02-19 21:16:15 INFO Agent starting run with config:
+	batch_size: 512
+	epochs: 100
+	learning_rate: 0.00010159531989985568
+	optimization.ema_decay: 0.10361653811351296
+	optimization.lambda_aux: 0.05179719901118207
+	weight_decay: 0.001
+2025-02-19 21:16:15 INFO About to run command: python Bloop.py ++batch_size=256 ++epochs=100 ++learning_rate=0.001 ++weight_decay=0.01 ++optimization.lambda_aux=0.2 ++optimization.ema_decay=0.05 ++wandb.log=true ++rseed=99
+2025-02-19 21:16:20 INFO Running runs: ['nwkujxqv']
+2025-02-19 21:16:35 INFO Cleaning up finished run: nwkujxqv
+2025-02-19 21:16:36 INFO Agent received command: run
+2025-02-19 21:16:36 INFO Agent starting run with config:
+	batch_size: 128
+	epochs: 100
+	learning_rate: 0.0006837076927569171
+	optimization.ema_decay: 0.08249183171173884
+	optimization.lambda_aux: 0.1514791257861784
+	weight_decay: 0.1
+2025-02-19 21:16:36 INFO About to run command: python Bloop.py ++batch_size=256 ++epochs=100 ++learning_rate=0.001 ++weight_decay=0.01 ++optimization.lambda_aux=0.2 ++optimization.ema_decay=0.05 ++wandb.log=true ++rseed=99
+2025-02-19 21:16:41 INFO Running runs: ['zezcfql0']
+2025-02-19 21:16:56 INFO Cleaning up finished run: zezcfql0
+2025-02-19 21:16:56 INFO Agent received command: run
+2025-02-19 21:16:56 INFO Agent starting run with config:
+	batch_size: 512
+	epochs: 100
+	learning_rate: 0.010302075717635237
+	optimization.ema_decay: 0.15414921343719265
+	optimization.lambda_aux: 0.7678481938191953
+	weight_decay: 0.01
+2025-02-19 21:16:56 INFO About to run command: python Bloop.py ++batch_size=256 ++epochs=100 ++learning_rate=0.001 ++weight_decay=0.01 ++optimization.lambda_aux=0.2 ++optimization.ema_decay=0.05 ++wandb.log=true ++rseed=99
+2025-02-19 21:17:01 INFO Running runs: ['hr10q9m5']
+2025-02-19 21:17:16 INFO Cleaning up finished run: hr10q9m5
+2025-02-19 21:17:17 INFO Agent received command: run
+2025-02-19 21:17:17 INFO Agent starting run with config:
+	batch_size: 256
+	epochs: 100
+	learning_rate: 0.002039649212345095
+	optimization.ema_decay: 0.03973567096415633
+	optimization.lambda_aux: 0.22312232245033187
+	weight_decay: 0.1
+2025-02-19 21:17:17 INFO About to run command: python Bloop.py ++batch_size=256 ++epochs=100 ++learning_rate=0.001 ++weight_decay=0.01 ++optimization.lambda_aux=0.2 ++optimization.ema_decay=0.05 ++wandb.log=true ++rseed=99
+2025-02-19 21:17:22 INFO Running runs: ['xhgvk4vk']
+2025-02-19 21:17:37 INFO Cleaning up finished run: xhgvk4vk
+2025-02-19 21:17:38 INFO Agent received command: run
+2025-02-19 21:17:38 INFO Agent starting run with config:
+	batch_size: 128
+	epochs: 100
+	learning_rate: 0.0027084233498656574
+	optimization.ema_decay: 0.013980109625772731
+	optimization.lambda_aux: 0.05112766772505452
+	weight_decay: 0.001
+2025-02-19 21:17:38 INFO About to run command: python Bloop.py ++batch_size=256 ++epochs=100 ++learning_rate=0.001 ++weight_decay=0.01 ++optimization.lambda_aux=0.2 ++optimization.ema_decay=0.05 ++wandb.log=true ++rseed=99
+2025-02-19 21:17:43 INFO Running runs: ['jpwuqugn']
+2025-02-19 21:20:40 INFO Running runs: []
+2025-02-19 21:20:40 INFO Agent received command: run
+2025-02-19 21:20:40 INFO Agent starting run with config:
+	batch_size: 128
+	epochs: 100
+	learning_rate: 0.029986152032420537
+	optimization.ema_decay: 0.07012259540605591
+	optimization.lambda_aux: 0.2706982386603998
+	weight_decay: 0.001
+2025-02-19 21:20:40 INFO About to run command: python Bloop.py ++batch_size=256 ++epochs=100 ++learning_rate=0.001 ++weight_decay=0.01 ++optimization.lambda_aux=0.2 ++optimization.ema_decay=0.05 ++wandb.log=true ++rseed=99
+2025-02-19 21:20:45 INFO Running runs: ['jhyz2unk']
+2025-02-19 21:22:34 INFO Running runs: []
+2025-02-19 21:22:34 INFO Agent received command: run
+2025-02-19 21:22:34 INFO Agent starting run with config:
+	batch_size: 256
+	epochs: 100
+	learning_rate: 0.022192695219827044
+	optimization.ema_decay: 0.01146129677420667
+	optimization.lambda_aux: 0.9650982426581814
+	weight_decay: 0.01
+2025-02-19 21:22:34 INFO About to run command: python Bloop.py ++batch_size=256 ++epochs=100 ++learning_rate=0.001 ++weight_decay=0.01 ++optimization.lambda_aux=0.2 ++optimization.ema_decay=0.05 ++wandb.log=true ++rseed=99
+2025-02-19 21:22:39 INFO Running runs: ['fhpvpyqb']
+2025-02-19 21:28:47 INFO Running runs: []
+2025-02-19 21:28:47 INFO Agent received command: run
+2025-02-19 21:28:47 INFO Agent starting run with config:
+	optimization.ema_decay: 0.044043337850249914
+	optimization.lambda_aux: 0.4326100178270222
+2025-02-19 21:28:47 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-19 21:28:52 INFO Running runs: ['ee6bebxa']
+2025-02-19 21:31:07 INFO Running runs: []
+2025-02-19 21:31:07 INFO Agent received command: run
+2025-02-19 21:31:07 INFO Agent starting run with config:
+	optimization.ema_decay: 0.08258297480544681
+	optimization.lambda_aux: 0.4914232167376066
+2025-02-19 21:31:07 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-19 21:31:12 INFO Running runs: ['yo8ap1dn']
+2025-02-19 21:37:46 ERROR 502 response executing GraphQL.
+2025-02-19 21:37:46 ERROR 
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>502 Server Error</title>
+</head>
+<body text=#000000 bgcolor=#ffffff>
+<h1>Error: Server Error</h1>
+<h2>The server encountered a temporary error and could not complete your request.<p>Please try again in 30 seconds.</h2>
+<h2></h2>
+</body></html>
+
+2025-02-19 21:38:27 INFO Cleaning up finished run: yo8ap1dn
+2025-02-19 21:38:28 INFO Agent received command: run
+2025-02-19 21:38:28 INFO Agent starting run with config:
+	optimization.ema_decay: 0.02645633055934453
+	optimization.lambda_aux: 0.1159369075396266
+2025-02-19 21:38:28 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-19 21:38:33 INFO Running runs: ['mf5cs1nx']
+2025-02-19 21:43:02 INFO Running runs: []
+2025-02-19 21:43:02 INFO Agent received command: run
+2025-02-19 21:43:02 INFO Agent starting run with config:
+	optimization.ema_decay: 0.03279748658500304
+	optimization.lambda_aux: 0.25182054136493454
+2025-02-19 21:43:02 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-19 21:43:07 INFO Running runs: ['napbtx0i']
+2025-02-19 21:43:22 INFO Cleaning up finished run: napbtx0i
+2025-02-19 21:43:22 INFO Agent received command: run
+2025-02-19 21:43:22 INFO Agent starting run with config:
+	optimization.ema_decay: 0.010614867362944352
+	optimization.lambda_aux: 0.22135908099677964
+2025-02-19 21:43:22 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-19 21:43:27 INFO Running runs: ['zbo5dy46']
+2025-02-19 21:43:42 INFO Cleaning up finished run: zbo5dy46
+2025-02-19 21:43:43 INFO Agent received command: run
+2025-02-19 21:43:43 INFO Agent starting run with config:
+	optimization.ema_decay: 0.02124557140190947
+	optimization.lambda_aux: 0.30675165927573383
+2025-02-19 21:43:43 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-19 21:43:48 INFO Running runs: ['1xf5hlzc']
+2025-02-19 23:35:40 INFO Running runs: []
+2025-02-19 23:35:41 INFO Agent received command: run
+2025-02-19 23:35:41 INFO Agent starting run with config:
+	optimization.ema_decay: 0.04514881442164328
+	optimization.lambda_aux: 0.13164465554981605
+2025-02-19 23:35:41 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-19 23:35:46 INFO Running runs: ['7188dusa']
+2025-02-19 23:41:34 INFO Running runs: []
+2025-02-19 23:41:34 INFO Agent received command: run
+2025-02-19 23:41:34 INFO Agent starting run with config:
+	optimization.ema_decay: 0.09083406832956156
+	optimization.lambda_aux: 0.4010703554637782
+2025-02-19 23:41:34 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-19 23:41:39 INFO Running runs: ['1lvk3ldu']
+2025-02-19 23:41:54 INFO Cleaning up finished run: 1lvk3ldu
+2025-02-19 23:41:54 INFO Agent received command: run
+2025-02-19 23:41:54 INFO Agent starting run with config:
+	optimization.ema_decay: 0.01736521468143146
+	optimization.lambda_aux: 0.211303524434226
+2025-02-19 23:41:55 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-19 23:42:00 INFO Running runs: ['pahk0yu5']
+2025-02-19 23:48:03 INFO Running runs: []
+2025-02-19 23:48:04 INFO Agent received command: run
+2025-02-19 23:48:04 INFO Agent starting run with config:
+	optimization.ema_decay: 0.04612798832934972
+	optimization.lambda_aux: 0.26483083980127003
+2025-02-19 23:48:04 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-19 23:48:09 INFO Running runs: ['auvxotd5']
+2025-02-19 23:57:02 INFO Running runs: []
+2025-02-19 23:57:02 INFO Agent received command: run
+2025-02-19 23:57:02 INFO Agent starting run with config:
+	optimization.ema_decay: 0.04014644045048115
+	optimization.lambda_aux: 0.28485189842815334
+2025-02-19 23:57:02 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-19 23:57:07 INFO Running runs: ['fdpwvsgo']
+2025-02-20 00:39:05 INFO Running runs: []
+2025-02-20 00:39:06 INFO Agent received command: run
+2025-02-20 00:39:06 INFO Agent starting run with config:
+	optimization.ema_decay: 0.08354177126941756
+	optimization.lambda_aux: 0.08379079127659689
+2025-02-20 00:39:06 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-20 00:39:11 INFO Running runs: ['ag9vvryc']
+2025-02-20 02:21:30 INFO Running runs: []
+2025-02-20 02:21:31 INFO Agent received command: run
+2025-02-20 02:21:31 INFO Agent starting run with config:
+	optimization.ema_decay: 0.06016676676359296
+	optimization.lambda_aux: 0.12041298846538064
+2025-02-20 02:21:31 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-20 02:21:36 INFO Running runs: ['t58icub4']
+2025-02-20 03:52:46 INFO Cleaning up finished run: t58icub4
+2025-02-20 03:52:46 INFO Agent received command: run
+2025-02-20 03:52:46 INFO Agent starting run with config:
+	optimization.ema_decay: 0.08824100670124274
+	optimization.lambda_aux: 0.18905122172637395
+2025-02-20 03:52:46 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-20 03:52:51 INFO Running runs: ['2e6bohlt']
+2025-02-20 05:23:42 INFO Cleaning up finished run: 2e6bohlt
+2025-02-20 05:23:42 INFO Agent received command: run
+2025-02-20 05:23:42 INFO Agent starting run with config:
+	optimization.ema_decay: 0.062076172248714805
+	optimization.lambda_aux: 0.42521285342501536
+2025-02-20 05:23:42 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-20 05:23:47 INFO Running runs: ['e9o6tr2g']
+2025-02-20 06:55:09 INFO Cleaning up finished run: e9o6tr2g
+2025-02-20 06:55:09 INFO Agent received command: run
+2025-02-20 06:55:09 INFO Agent starting run with config:
+	optimization.ema_decay: 0.051042757388235466
+	optimization.lambda_aux: 0.20893920107404157
+2025-02-20 06:55:09 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-20 06:55:14 INFO Running runs: ['k4d4tzw8']
+2025-02-20 08:26:24 INFO Cleaning up finished run: k4d4tzw8
+2025-02-20 08:26:24 INFO Agent received command: run
+2025-02-20 08:26:24 INFO Agent starting run with config:
+	optimization.ema_decay: 0.0789318321168521
+	optimization.lambda_aux: 0.07753164221047182
+2025-02-20 08:26:24 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-20 08:26:29 INFO Running runs: ['ub75misg']
+2025-02-20 09:56:28 INFO Cleaning up finished run: ub75misg
+2025-02-20 09:56:29 INFO Agent received command: run
+2025-02-20 09:56:29 INFO Agent starting run with config:
+	optimization.ema_decay: 0.01693335506606985
+	optimization.lambda_aux: 0.4112062700208836
+2025-02-20 09:56:29 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-20 09:56:34 INFO Running runs: ['ehmw6t4f']
+2025-02-20 11:27:48 INFO Cleaning up finished run: ehmw6t4f
+2025-02-20 11:27:48 INFO Agent received command: run
+2025-02-20 11:27:48 INFO Agent starting run with config:
+	optimization.ema_decay: 0.020257127000103813
+	optimization.lambda_aux: 0.4837209409357551
+2025-02-20 11:27:48 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-20 11:27:53 INFO Running runs: ['arrfnu6w']
+2025-02-20 12:59:24 INFO Cleaning up finished run: arrfnu6w
+2025-02-20 12:59:24 INFO Agent received command: run
+2025-02-20 12:59:24 INFO Agent starting run with config:
+	optimization.ema_decay: 0.03473785913767688
+	optimization.lambda_aux: 0.2499294406781717
+2025-02-20 12:59:24 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-20 12:59:29 INFO Running runs: ['rti7ajst']
+2025-02-20 14:30:23 INFO Cleaning up finished run: rti7ajst
+2025-02-20 14:30:24 INFO Agent received command: run
+2025-02-20 14:30:24 INFO Agent starting run with config:
+	optimization.ema_decay: 0.07495575374086838
+	optimization.lambda_aux: 0.0617552676619182
+2025-02-20 14:30:24 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-20 14:30:29 INFO Running runs: ['yaju42kk']
+2025-02-20 16:01:20 INFO Cleaning up finished run: yaju42kk
+2025-02-20 16:01:21 INFO Agent received command: run
+2025-02-20 16:01:21 INFO Agent starting run with config:
+	optimization.ema_decay: 0.02543353282699947
+	optimization.lambda_aux: 0.2795804955305703
+2025-02-20 16:01:21 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-20 16:01:26 INFO Running runs: ['mltxmcqi']
+2025-02-20 17:31:39 INFO Cleaning up finished run: mltxmcqi
+2025-02-20 17:31:39 INFO Agent received command: exit
+2025-02-20 17:31:39 INFO Received exit command. Killing runs and quitting.
+2025-02-21 19:25:40 INFO Running runs: []
+2025-02-21 19:25:40 INFO Agent received command: run
+2025-02-21 19:25:40 INFO Agent starting run with config:
+	optimization.ema_decay: 0.03785666150292057
+	optimization.lambda_aux: 0.16962702420532183
+2025-02-21 19:25:40 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99 ++optimization.lambda_aux=${optimization.lambda_aux} ++optimization.ema_decay=${optimization.ema_decay}
+2025-02-21 19:25:45 INFO Running runs: ['6jvfo31y']
+2025-02-21 19:25:45 INFO Cleaning up finished run: 6jvfo31y
+2025-02-21 19:25:45 INFO Agent received command: run
+2025-02-21 19:25:45 INFO Agent starting run with config:
+	optimization.ema_decay: 0.05934804803137243
+	optimization.lambda_aux: 0.428000764141545
+2025-02-21 19:25:45 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99 ++optimization.lambda_aux=${optimization.lambda_aux} ++optimization.ema_decay=${optimization.ema_decay}
+2025-02-21 19:25:50 INFO Running runs: ['0b5qodh8']
+2025-02-21 19:25:50 INFO Cleaning up finished run: 0b5qodh8
+2025-02-21 19:25:51 INFO Agent received command: run
+2025-02-21 19:25:51 INFO Agent starting run with config:
+	optimization.ema_decay: 0.07159692079296996
+	optimization.lambda_aux: 0.4664990528618898
+2025-02-21 19:25:51 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99 ++optimization.lambda_aux=${optimization.lambda_aux} ++optimization.ema_decay=${optimization.ema_decay}
+2025-02-21 19:29:56 INFO Running runs: []
+2025-02-21 19:29:57 INFO Agent received command: run
+2025-02-21 19:29:57 INFO Agent starting run with config:
+	optimization.ema_decay: 0.033357918321520776
+	optimization.lambda_aux: 0.34902268317270707
+2025-02-21 19:29:57 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99
+2025-02-21 19:30:02 INFO Running runs: ['70f19rbz']
+2025-02-21 19:36:47 INFO Running runs: []
+2025-02-21 19:36:48 INFO Agent received command: run
+2025-02-21 19:36:48 INFO Agent starting run with config:
+	optimization.ema_decay: 0.06751560150960138
+	optimization.lambda_aux: 0.31584829990492946
+2025-02-21 19:36:48 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99 ++optimization.lambda_aux=${optimization.lambda_aux} ++optimization.ema_decay=${optimization.ema_decay}
+2025-02-21 19:36:53 INFO Running runs: ['ew8972y3']
+2025-02-21 19:36:53 INFO Cleaning up finished run: ew8972y3
+2025-02-21 19:36:53 INFO Agent received command: run
+2025-02-21 19:36:53 INFO Agent starting run with config:
+	optimization.ema_decay: 0.08035924690775804
+	optimization.lambda_aux: 0.23801122971750532
+2025-02-21 19:36:53 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99 ++optimization.lambda_aux=${optimization.lambda_aux} ++optimization.ema_decay=${optimization.ema_decay}
+2025-02-21 19:38:22 INFO Running runs: []
+2025-02-21 19:38:22 INFO Agent received command: run
+2025-02-21 19:38:22 INFO Agent starting run with config:
+	optimization.ema_decay: 0.026268283637857937
+	optimization.lambda_aux: 0.24413006978710183
+2025-02-21 19:38:22 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99 ++optimization.lambda_aux="$(optimization.lambda_aux)" ++optimization.ema_decay="$(optimization.ema_decay)"
+2025-02-21 19:38:27 INFO Running runs: ['qpdmbqrn']
+2025-02-21 19:47:47 INFO Running runs: []
+2025-02-21 19:47:47 INFO Agent received command: run
+2025-02-21 19:47:47 INFO Agent starting run with config:
+	optimization.ema_decay: 0.08354173882349582
+	optimization.lambda_aux: 0.43471342598453505
+2025-02-21 19:47:47 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99 ++optimization.lambda_aux=${optimization.lambda_aux} ++optimization.ema_decay=${optimization.ema_decay}
+2025-02-21 19:47:52 INFO Running runs: ['u1kvywvh']
+2025-02-21 19:47:52 INFO Cleaning up finished run: u1kvywvh
+2025-02-21 19:47:52 INFO Agent received command: run
+2025-02-21 19:47:52 INFO Agent starting run with config:
+	optimization.ema_decay: 0.0737374953654161
+	optimization.lambda_aux: 0.2477698944841392
+2025-02-21 19:47:52 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99 ++optimization.lambda_aux=${optimization.lambda_aux} ++optimization.ema_decay=${optimization.ema_decay}
+2025-02-21 19:51:38 INFO Running runs: []
+2025-02-21 19:51:38 INFO Agent received command: run
+2025-02-21 19:51:38 INFO Agent starting run with config:
+	optimization.ema_decay: 0.04800347093086572
+	optimization.lambda_aux: 0.48577962414843134
+2025-02-21 19:51:38 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99 ++optimization.lambda_aux=${optimization.lambda_aux} ++optimization.ema_decay=${optimization.ema_decay}
+2025-02-21 19:51:43 INFO Running runs: ['ews6ctf6']
+2025-02-21 19:51:43 INFO Cleaning up finished run: ews6ctf6
+2025-02-21 19:51:43 INFO Agent received command: run
+2025-02-21 19:51:43 INFO Agent starting run with config:
+	optimization.ema_decay: 0.0261739556259144
+	optimization.lambda_aux: 0.4393787244982495
+2025-02-21 19:51:43 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99 ++optimization.lambda_aux=${optimization.lambda_aux} ++optimization.ema_decay=${optimization.ema_decay}
+2025-02-21 19:54:50 INFO Running runs: []
+2025-02-21 19:54:50 INFO Agent received command: run
+2025-02-21 19:54:50 INFO Agent starting run with config:
+	optimization.ema_decay: 0.0560982911505996
+	optimization.lambda_aux: 0.37982197927646905
+2025-02-21 19:54:50 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99 "++optimization.lambda_aux=$(optimization.lambda_aux) ++optimization.ema_decay=$(optimization.ema_decay)"
+2025-02-21 19:54:55 INFO Running runs: ['2pndd103']
+2025-02-21 19:54:55 INFO Cleaning up finished run: 2pndd103
+2025-02-21 19:54:55 INFO Agent received command: run
+2025-02-21 19:54:55 INFO Agent starting run with config:
+	optimization.ema_decay: 0.06433153354968586
+	optimization.lambda_aux: 0.386810518458628
+2025-02-21 19:54:55 INFO About to run command: python Bloop.py ++wandb.log=true ++rseed=99 "++optimization.lambda_aux=$(optimization.lambda_aux) ++optimization.ema_decay=$(optimization.ema_decay)"
+2025-02-21 19:55:33 INFO Running runs: []
+2025-02-21 19:55:33 INFO Agent received command: run
+2025-02-21 19:55:33 INFO Agent starting run with config:
+	optimization.ema_decay: 0.04203473589965207
+	optimization.lambda_aux: 0.19646935281615663
+2025-02-21 19:55:33 INFO About to run command: bash -c "python Bloop.py ++wandb.log=true ++rseed=99  ++optimization.lambda_aux=$WANDB_OPTIMIZATION_LAMBDA_AUX  ++optimization.ema_decay=$WANDB_OPTIMIZATION_EMA_DECAY"
+2025-02-21 19:55:38 INFO Running runs: ['zvobm2m7']
+2025-02-21 19:59:19 INFO Running runs: []
+2025-02-21 19:59:19 INFO Agent received command: run
+2025-02-21 19:59:19 INFO Agent starting run with config:
+	optimization.ema_decay: 0.034335185635226084
+	optimization.lambda_aux: 0.2401207038189957
+2025-02-21 19:59:19 INFO About to run command: python Bloop.py optimization.lambda_aux=${optimization.lambda_aux} optimization.ema_decay=${optimization.ema_decay} wandb.log=true rseed=99
+2025-02-21 19:59:24 INFO Running runs: ['tbwb6135']
+2025-02-21 19:59:24 INFO Cleaning up finished run: tbwb6135
+2025-02-21 19:59:25 INFO Agent received command: run
+2025-02-21 19:59:25 INFO Agent starting run with config:
+	optimization.ema_decay: 0.06933312826826807
+	optimization.lambda_aux: 0.3016923950108073
+2025-02-21 19:59:25 INFO About to run command: python Bloop.py optimization.lambda_aux=${optimization.lambda_aux} optimization.ema_decay=${optimization.ema_decay} wandb.log=true rseed=99
+2025-02-21 20:00:16 INFO Running runs: []
+2025-02-21 20:00:16 INFO Agent received command: run
+2025-02-21 20:00:16 INFO Agent starting run with config:
+	optimization.ema_decay: 0.028517695214532124
+	optimization.lambda_aux: 0.05648922913823039
+2025-02-21 20:00:16 INFO About to run command: python Bloop.py optimization.lambda_aux="$(optimization.lambda_aux)" optimization.ema_decay="$(optimization.ema_decay)" wandb.log=true rseed=99
+2025-02-21 20:00:21 INFO Running runs: ['b4phxl21']
+2025-02-21 20:14:42 INFO Running runs: []
+2025-02-21 20:14:43 INFO Agent received command: run
+2025-02-21 20:14:43 INFO Agent starting run with config:
+	optimization.ema_decay: 0.07778266259024658
+	optimization.lambda_aux: 0.17791084794105022
+2025-02-21 20:14:43 INFO About to run command: python optimization.ema_decay=0.07778266259024658 optimization.lambda_aux=0.17791084794105022 Bloop.py wandb.log=true rseed=42
+2025-02-21 20:14:48 INFO Running runs: ['xbe33ijc']
+2025-02-21 20:14:48 INFO Cleaning up finished run: xbe33ijc
+2025-02-21 20:14:48 INFO Agent received command: run
+2025-02-21 20:14:48 INFO Agent starting run with config:
+	optimization.ema_decay: 0.06408908059857014
+	optimization.lambda_aux: 0.17506372366207912
+2025-02-21 20:14:48 INFO About to run command: python optimization.ema_decay=0.06408908059857014 optimization.lambda_aux=0.17506372366207912 Bloop.py wandb.log=true rseed=42
+2025-02-21 20:16:09 INFO Running runs: []
+2025-02-21 20:16:09 INFO Agent received command: run
+2025-02-21 20:16:09 INFO Agent starting run with config:
+	optimization.ema_decay: 0.030155491943949453
+	optimization.lambda_aux: 0.12260009375297838
+2025-02-21 20:16:09 INFO About to run command: python Bloop.py optimization.ema_decay=0.030155491943949453 optimization.lambda_aux=0.12260009375297838 wandb.log=true rseed=42
+2025-02-21 20:16:14 INFO Running runs: ['53wse7yy']
+2025-02-21 20:21:02 INFO Cleaning up finished run: 53wse7yy
+2025-02-21 20:21:02 INFO Agent received command: run
+2025-02-21 20:21:02 INFO Agent starting run with config:
+	optimization.ema_decay: 0.05712633417337381
+	optimization.lambda_aux: 0.3829814237153287
+2025-02-21 20:21:02 INFO About to run command: python Bloop.py optimization.ema_decay=0.05712633417337381 optimization.lambda_aux=0.3829814237153287 wandb.log=true rseed=42
+2025-02-21 20:21:07 INFO Running runs: ['zkgyxskf']
+2025-02-21 20:26:00 INFO Cleaning up finished run: zkgyxskf
+2025-02-21 20:26:01 INFO Agent received command: run
+2025-02-21 20:26:01 INFO Agent starting run with config:
+	optimization.ema_decay: 0.03162388639102781
+	optimization.lambda_aux: 0.1313702701150168
+2025-02-21 20:26:01 INFO About to run command: python Bloop.py optimization.ema_decay=0.03162388639102781 optimization.lambda_aux=0.1313702701150168 wandb.log=true rseed=42
+2025-02-21 20:26:06 INFO Running runs: ['rkxeer3u']
+2025-02-21 20:30:53 INFO Cleaning up finished run: rkxeer3u
+2025-02-21 20:30:54 INFO Agent received command: run
+2025-02-21 20:30:54 INFO Agent starting run with config:
+	optimization.ema_decay: 0.039857310356304326
+	optimization.lambda_aux: 0.2291930573850248
+2025-02-21 20:30:54 INFO About to run command: python Bloop.py optimization.ema_decay=0.039857310356304326 optimization.lambda_aux=0.2291930573850248 wandb.log=true rseed=42
+2025-02-21 20:30:59 INFO Running runs: ['di7p68r1']
+2025-02-21 20:35:47 INFO Cleaning up finished run: di7p68r1
+2025-02-21 20:35:47 INFO Agent received command: run
+2025-02-21 20:35:47 INFO Agent starting run with config:
+	optimization.ema_decay: 0.07296352560453587
+	optimization.lambda_aux: 0.0968690009470918
+2025-02-21 20:35:47 INFO About to run command: python Bloop.py optimization.ema_decay=0.07296352560453587 optimization.lambda_aux=0.0968690009470918 wandb.log=true rseed=42
+2025-02-21 20:35:52 INFO Running runs: ['1xfyi9k0']
+2025-02-21 20:40:40 INFO Cleaning up finished run: 1xfyi9k0
+2025-02-21 20:40:40 INFO Agent received command: run
+2025-02-21 20:40:40 INFO Agent starting run with config:
+	optimization.ema_decay: 0.09462237814752004
+	optimization.lambda_aux: 0.13742433791091668
+2025-02-21 20:40:40 INFO About to run command: python Bloop.py optimization.ema_decay=0.09462237814752004 optimization.lambda_aux=0.13742433791091668 wandb.log=true rseed=42
+2025-02-21 20:40:46 INFO Running runs: ['3t0gx26j']
+2025-02-21 20:45:34 INFO Cleaning up finished run: 3t0gx26j
+2025-02-21 20:45:34 INFO Agent received command: run
+2025-02-21 20:45:34 INFO Agent starting run with config:
+	optimization.ema_decay: 0.03579616122581302
+	optimization.lambda_aux: 0.29696364366773265
+2025-02-21 20:45:34 INFO About to run command: python Bloop.py optimization.ema_decay=0.03579616122581302 optimization.lambda_aux=0.29696364366773265 wandb.log=true rseed=42
+2025-02-21 20:45:39 INFO Running runs: ['gb11d8r2']
+2025-02-21 20:50:27 INFO Cleaning up finished run: gb11d8r2
+2025-02-21 20:50:28 INFO Agent received command: run
+2025-02-21 20:50:28 INFO Agent starting run with config:
+	optimization.ema_decay: 0.03436201066062128
+	optimization.lambda_aux: 0.48325081615519766
+2025-02-21 20:50:28 INFO About to run command: python Bloop.py optimization.ema_decay=0.03436201066062128 optimization.lambda_aux=0.48325081615519766 wandb.log=true rseed=42
+2025-02-21 20:50:33 INFO Running runs: ['0l35ifo9']
+2025-02-21 20:55:20 INFO Cleaning up finished run: 0l35ifo9
+2025-02-21 20:55:21 INFO Agent received command: run
+2025-02-21 20:55:21 INFO Agent starting run with config:
+	optimization.ema_decay: 0.04266282741334897
+	optimization.lambda_aux: 0.3883418226200707
+2025-02-21 20:55:21 INFO About to run command: python Bloop.py optimization.ema_decay=0.04266282741334897 optimization.lambda_aux=0.3883418226200707 wandb.log=true rseed=42
+2025-02-21 20:55:26 INFO Running runs: ['287fw10t']
+2025-02-21 21:00:14 INFO Cleaning up finished run: 287fw10t
+2025-02-21 21:00:14 INFO Agent received command: run
+2025-02-21 21:00:14 INFO Agent starting run with config:
+	optimization.ema_decay: 0.06652442348486995
+	optimization.lambda_aux: 0.4404806319805294
+2025-02-21 21:00:14 INFO About to run command: python Bloop.py optimization.ema_decay=0.06652442348486995 optimization.lambda_aux=0.4404806319805294 wandb.log=true rseed=42
+2025-02-21 21:00:19 INFO Running runs: ['5lulvyds']
+2025-02-21 21:05:12 INFO Cleaning up finished run: 5lulvyds
+2025-02-21 21:05:13 INFO Agent received command: exit
+2025-02-21 21:05:13 INFO Received exit command. Killing runs and quitting.

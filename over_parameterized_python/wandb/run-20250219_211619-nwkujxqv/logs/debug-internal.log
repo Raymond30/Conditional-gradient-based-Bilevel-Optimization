@@ -1,0 +1,106 @@
+2025-02-19 21:16:20,419 INFO    StreamThr :2929952 [internal.py:wandb_internal():83] W&B internal server running at pid: 2929952, started at: 2025-02-19 21:16:20.417712
+2025-02-19 21:16:20,427 INFO    WriterThread:2929952 [datastore.py:open_for_write():87] open: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/run-nwkujxqv.wandb
+2025-02-19 21:16:20,680 INFO    SenderThread:2929952 [dir_watcher.py:__init__():211] watching files in: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files
+2025-02-19 21:16:20,681 INFO    SenderThread:2929952 [sender.py:_start_run_threads():1150] run started: nwkujxqv with start time 1740021380.414405
+2025-02-19 21:16:20,705 INFO    HandlerThread:2929952 [system_monitor.py:start():187] Starting system monitor
+2025-02-19 21:16:20,706 INFO    SystemMonitor:2929952 [system_monitor.py:_start():151] Starting system asset monitoring threads
+2025-02-19 21:16:20,706 INFO    HandlerThread:2929952 [system_monitor.py:probe():207] Collecting system info
+2025-02-19 21:16:20,707 INFO    SystemMonitor:2929952 [interfaces.py:start():186] Started cpu monitoring
+2025-02-19 21:16:20,709 INFO    SystemMonitor:2929952 [interfaces.py:start():186] Started disk monitoring
+2025-02-19 21:16:20,711 INFO    SystemMonitor:2929952 [interfaces.py:start():186] Started gpu monitoring
+2025-02-19 21:16:20,713 INFO    SystemMonitor:2929952 [interfaces.py:start():186] Started memory monitoring
+2025-02-19 21:16:20,715 INFO    SystemMonitor:2929952 [interfaces.py:start():186] Started network monitoring
+2025-02-19 21:16:20,851 INFO    HandlerThread:2929952 [system_monitor.py:probe():217] Finished collecting system info
+2025-02-19 21:16:20,851 INFO    HandlerThread:2929952 [system_monitor.py:probe():220] Publishing system info
+2025-02-19 21:16:21,684 INFO    Thread-12 :2929952 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/conda-environment.yaml
+2025-02-19 21:16:24,135 INFO    HandlerThread:2929952 [system_monitor.py:probe():222] Finished publishing system info
+2025-02-19 21:16:24,143 INFO    SenderThread:2929952 [sender.py:_save_file():1419] saving file wandb-metadata.json with policy now
+2025-02-19 21:16:24,453 INFO    wandb-upload_0:2929952 [upload_job.py:push():130] Uploaded file /tmp/tmpjquvfez5wandb/0037nk5f-wandb-metadata.json
+2025-02-19 21:16:24,681 INFO    Thread-12 :2929952 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/conda-environment.yaml
+2025-02-19 21:16:24,682 INFO    Thread-12 :2929952 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/wandb-metadata.json
+2025-02-19 21:16:24,683 INFO    Thread-12 :2929952 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/requirements.txt
+2025-02-19 21:16:25,888 INFO    SenderThread:2929952 [sender.py:send_exit():570] handling exit code: 1
+2025-02-19 21:16:25,888 INFO    SenderThread:2929952 [sender.py:send_exit():572] handling runtime: 5
+2025-02-19 21:16:25,892 INFO    SenderThread:2929952 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-19 21:16:25,893 INFO    SenderThread:2929952 [sender.py:send_exit():578] send defer
+2025-02-19 21:16:25,894 INFO    HandlerThread:2929952 [handler.py:handle_request_defer():188] handle defer: 0
+2025-02-19 21:16:25,894 INFO    SenderThread:2929952 [sender.py:send_request_defer():594] handle sender defer: 0
+2025-02-19 21:16:25,895 INFO    SenderThread:2929952 [sender.py:transition_state():598] send defer: 1
+2025-02-19 21:16:25,895 INFO    HandlerThread:2929952 [handler.py:handle_request_defer():188] handle defer: 1
+2025-02-19 21:16:25,896 INFO    SenderThread:2929952 [sender.py:send_request_defer():594] handle sender defer: 1
+2025-02-19 21:16:25,896 INFO    SenderThread:2929952 [sender.py:transition_state():598] send defer: 2
+2025-02-19 21:16:25,896 INFO    HandlerThread:2929952 [handler.py:handle_request_defer():188] handle defer: 2
+2025-02-19 21:16:25,897 INFO    HandlerThread:2929952 [system_monitor.py:finish():196] Stopping system monitor
+2025-02-19 21:16:25,898 INFO    HandlerThread:2929952 [interfaces.py:finish():198] Joined cpu monitor
+2025-02-19 21:16:25,900 INFO    HandlerThread:2929952 [interfaces.py:finish():198] Joined disk monitor
+2025-02-19 21:16:26,683 INFO    Thread-12 :2929952 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/output.log
+2025-02-19 21:16:26,684 INFO    Thread-12 :2929952 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/wandb-summary.json
+2025-02-19 21:16:26,727 INFO    HandlerThread:2929952 [interfaces.py:finish():198] Joined gpu monitor
+2025-02-19 21:16:26,728 INFO    HandlerThread:2929952 [interfaces.py:finish():198] Joined memory monitor
+2025-02-19 21:16:26,728 INFO    HandlerThread:2929952 [interfaces.py:finish():198] Joined network monitor
+2025-02-19 21:16:26,729 INFO    SenderThread:2929952 [sender.py:send_request_defer():594] handle sender defer: 2
+2025-02-19 21:16:26,730 INFO    SenderThread:2929952 [sender.py:transition_state():598] send defer: 3
+2025-02-19 21:16:26,732 INFO    HandlerThread:2929952 [handler.py:handle_request_defer():188] handle defer: 3
+2025-02-19 21:16:26,733 INFO    SenderThread:2929952 [sender.py:send_request_defer():594] handle sender defer: 3
+2025-02-19 21:16:26,733 INFO    SenderThread:2929952 [sender.py:transition_state():598] send defer: 4
+2025-02-19 21:16:26,733 INFO    HandlerThread:2929952 [handler.py:handle_request_defer():188] handle defer: 4
+2025-02-19 21:16:26,734 INFO    SenderThread:2929952 [sender.py:send_request_defer():594] handle sender defer: 4
+2025-02-19 21:16:26,734 INFO    SenderThread:2929952 [sender.py:transition_state():598] send defer: 5
+2025-02-19 21:16:26,734 INFO    HandlerThread:2929952 [handler.py:handle_request_defer():188] handle defer: 5
+2025-02-19 21:16:26,736 INFO    SenderThread:2929952 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-19 21:16:26,737 INFO    SenderThread:2929952 [sender.py:send_request_defer():594] handle sender defer: 5
+2025-02-19 21:16:26,737 INFO    SenderThread:2929952 [sender.py:transition_state():598] send defer: 6
+2025-02-19 21:16:26,737 INFO    HandlerThread:2929952 [handler.py:handle_request_defer():188] handle defer: 6
+2025-02-19 21:16:26,738 INFO    SenderThread:2929952 [sender.py:send_request_defer():594] handle sender defer: 6
+2025-02-19 21:16:26,833 INFO    SenderThread:2929952 [sender.py:transition_state():598] send defer: 7
+2025-02-19 21:16:26,834 INFO    HandlerThread:2929952 [handler.py:handle_request_defer():188] handle defer: 7
+2025-02-19 21:16:26,834 INFO    SenderThread:2929952 [sender.py:send_request_defer():594] handle sender defer: 7
+2025-02-19 21:16:27,683 INFO    Thread-12 :2929952 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/config.yaml
+2025-02-19 21:16:27,684 INFO    Thread-12 :2929952 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/wandb-summary.json
+2025-02-19 21:16:27,854 INFO    SenderThread:2929952 [sender.py:transition_state():598] send defer: 8
+2025-02-19 21:16:27,855 INFO    HandlerThread:2929952 [handler.py:handle_request_defer():188] handle defer: 8
+2025-02-19 21:16:27,856 INFO    SenderThread:2929952 [sender.py:send_request_defer():594] handle sender defer: 8
+2025-02-19 21:16:27,856 INFO    SenderThread:2929952 [sender.py:transition_state():598] send defer: 9
+2025-02-19 21:16:27,857 INFO    HandlerThread:2929952 [handler.py:handle_request_defer():188] handle defer: 9
+2025-02-19 21:16:27,858 INFO    SenderThread:2929952 [sender.py:send_request_defer():594] handle sender defer: 9
+2025-02-19 21:16:27,858 INFO    SenderThread:2929952 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-02-19 21:16:28,684 INFO    Thread-12 :2929952 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/output.log
+2025-02-19 21:16:28,686 INFO    SenderThread:2929952 [dir_watcher.py:finish():388] scan: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files
+2025-02-19 21:16:28,686 INFO    SenderThread:2929952 [dir_watcher.py:finish():402] scan save: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/requirements.txt requirements.txt
+2025-02-19 21:16:28,687 INFO    SenderThread:2929952 [dir_watcher.py:finish():402] scan save: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/conda-environment.yaml conda-environment.yaml
+2025-02-19 21:16:28,687 INFO    SenderThread:2929952 [dir_watcher.py:finish():402] scan save: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/wandb-summary.json wandb-summary.json
+2025-02-19 21:16:28,687 INFO    SenderThread:2929952 [dir_watcher.py:finish():402] scan save: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/output.log output.log
+2025-02-19 21:16:28,687 INFO    SenderThread:2929952 [dir_watcher.py:finish():402] scan save: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/config.yaml config.yaml
+2025-02-19 21:16:28,688 INFO    SenderThread:2929952 [dir_watcher.py:finish():402] scan save: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/wandb-metadata.json wandb-metadata.json
+2025-02-19 21:16:28,688 INFO    SenderThread:2929952 [sender.py:transition_state():598] send defer: 10
+2025-02-19 21:16:28,690 INFO    HandlerThread:2929952 [handler.py:handle_request_defer():188] handle defer: 10
+2025-02-19 21:16:28,696 INFO    SenderThread:2929952 [sender.py:send_request_defer():594] handle sender defer: 10
+2025-02-19 21:16:28,696 INFO    SenderThread:2929952 [file_pusher.py:finish():169] shutting down file pusher
+2025-02-19 21:16:28,969 INFO    wandb-upload_1:2929952 [upload_job.py:push():130] Uploaded file /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/conda-environment.yaml
+2025-02-19 21:16:29,168 INFO    wandb-upload_0:2929952 [upload_job.py:push():130] Uploaded file /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/requirements.txt
+2025-02-19 21:16:29,348 INFO    wandb-upload_3:2929952 [upload_job.py:push():130] Uploaded file /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/output.log
+2025-02-19 21:16:29,401 INFO    wandb-upload_2:2929952 [upload_job.py:push():130] Uploaded file /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/wandb-summary.json
+2025-02-19 21:16:29,403 INFO    wandb-upload_4:2929952 [upload_job.py:push():130] Uploaded file /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/files/config.yaml
+2025-02-19 21:16:29,604 INFO    Thread-11 :2929952 [sender.py:transition_state():598] send defer: 11
+2025-02-19 21:16:29,605 INFO    HandlerThread:2929952 [handler.py:handle_request_defer():188] handle defer: 11
+2025-02-19 21:16:29,606 INFO    SenderThread:2929952 [sender.py:send_request_defer():594] handle sender defer: 11
+2025-02-19 21:16:29,606 INFO    SenderThread:2929952 [file_pusher.py:join():175] waiting for file pusher
+2025-02-19 21:16:29,607 INFO    SenderThread:2929952 [sender.py:transition_state():598] send defer: 12
+2025-02-19 21:16:29,607 INFO    HandlerThread:2929952 [handler.py:handle_request_defer():188] handle defer: 12
+2025-02-19 21:16:29,608 INFO    SenderThread:2929952 [sender.py:send_request_defer():594] handle sender defer: 12
+2025-02-19 21:16:29,608 INFO    SenderThread:2929952 [file_stream.py:finish():601] file stream finish called
+2025-02-19 21:16:29,663 INFO    SenderThread:2929952 [file_stream.py:finish():605] file stream finish is done
+2025-02-19 21:16:29,663 INFO    SenderThread:2929952 [sender.py:transition_state():598] send defer: 13
+2025-02-19 21:16:29,663 INFO    HandlerThread:2929952 [handler.py:handle_request_defer():188] handle defer: 13
+2025-02-19 21:16:29,664 INFO    SenderThread:2929952 [sender.py:send_request_defer():594] handle sender defer: 13
+2025-02-19 21:16:29,664 INFO    SenderThread:2929952 [sender.py:transition_state():598] send defer: 14
+2025-02-19 21:16:29,666 INFO    HandlerThread:2929952 [handler.py:handle_request_defer():188] handle defer: 14
+2025-02-19 21:16:29,667 INFO    SenderThread:2929952 [sender.py:send_request_defer():594] handle sender defer: 14
+2025-02-19 21:16:29,674 INFO    MainThread:2929952 [wandb_run.py:_footer_history_summary_info():3963] rendering history
+2025-02-19 21:16:29,674 INFO    MainThread:2929952 [wandb_run.py:_footer_history_summary_info():3995] rendering summary
+2025-02-19 21:16:29,675 INFO    MainThread:2929952 [wandb_run.py:_footer_sync_info():3924] logging synced files
+2025-02-19 21:16:29,676 INFO    HandlerThread:2929952 [handler.py:finish():896] shutting down handler
+2025-02-19 21:16:30,671 INFO    WriterThread:2929952 [datastore.py:close():296] close: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_211619-nwkujxqv/run-nwkujxqv.wandb
+2025-02-19 21:16:30,672 INFO    SenderThread:2929952 [sender.py:finish():1598] shutting down sender
+2025-02-19 21:16:30,672 INFO    SenderThread:2929952 [file_pusher.py:finish():169] shutting down file pusher
+2025-02-19 21:16:30,673 INFO    SenderThread:2929952 [file_pusher.py:join():175] waiting for file pusher

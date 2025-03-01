@@ -1,0 +1,38 @@
+program: Bloop.py
+name: train_sweep
+project: bilevel
+
+method: bayes
+
+metric:
+  name: main_loss
+  goal: minimize
+
+parameters:
+  # Bilevel optimization parameters (only used when mode="bilevel")
+  optimization.lambda_aux:
+    min: 0.05
+    max: 0.5
+    distribution: uniform
+  
+  optimization.ema_decay:
+    min: 0.01
+    max: 0.1
+    distribution: uniform
+  
+  # Note: DBGD parameters are not being swept as per user request
+  # To use DBGD, set mode="dbgd" in the command line arguments
+  
+  # Full batch training can be included in sweeps
+  full_batch:
+    values: [false, true]
+
+run_cap: 10
+
+command:
+  - python
+  - Bloop.py
+  - ${args_no_hyphens}
+  - wandb.log=true
+  - rseed=42
+ 

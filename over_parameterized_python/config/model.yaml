@@ -1,0 +1,5 @@
+mlp:
+  hidden_dim: 256
+  activation: relu
+  dropout: 0.1
+  batch_norm: true

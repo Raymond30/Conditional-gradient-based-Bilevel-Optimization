@@ -1,0 +1,6 @@
+Error executing job with overrides: ['++wandb.log=true', '++rseed=99']
+Traceback (most recent call last):
+  File "Bloop.py", line 122, in main
+    g_a_flat = g_a.view(-1)
+AttributeError: 'NoneType' object has no attribute 'view'
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

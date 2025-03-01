@@ -1,0 +1,9 @@
+Error executing job with overrides: ['++batch_size=256', '++epochs=100', '++learning_rate=0.001', '++weight_decay=0.01', '++optimization.lambda_aux=0.2', '++optimization.ema_decay=0.05', '++wandb.log=true', '++rseed=99']
+Traceback (most recent call last):
+  File "Bloop.py", line 93, in main
+    model.load_state_dict(checkpoint['model_state_dict'])
+  File "/home/jz24694/anaconda3/envs/dreamgaussian4d2/lib/python3.8/site-packages/torch/nn/modules/module.py", line 2041, in load_state_dict
+    raise RuntimeError('Error(s) in loading state_dict for {}:\n\t{}'.format(
+RuntimeError: Error(s) in loading state_dict for MLP:
+	Missing key(s) in state_dict: "bn1.weight", "bn1.bias", "bn1.running_mean", "bn1.running_var", "bn2.weight", "bn2.bias", "bn2.running_mean", "bn2.running_var".
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

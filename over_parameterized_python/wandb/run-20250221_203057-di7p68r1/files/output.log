@@ -1,0 +1,7 @@
+EMA decay: 0.039857310356304326
+Lambda aux: 0.2291930573850248
+Epoch [1/5], Main Loss: 0.3095, Aux Loss: 3.4746, Grad Norm: 1.1737, Train Acc: 94.02%, Test Acc: 93.77%
+Epoch [2/5], Main Loss: 0.2093, Aux Loss: 2.5094, Grad Norm: 1.6745, Train Acc: 94.58%, Test Acc: 94.44%
+Epoch [3/5], Main Loss: 0.2067, Aux Loss: 2.5232, Grad Norm: 1.7464, Train Acc: 95.19%, Test Acc: 94.92%
+Epoch [4/5], Main Loss: 0.2090, Aux Loss: 2.5750, Grad Norm: 1.7833, Train Acc: 94.42%, Test Acc: 94.16%
+Epoch [5/5], Main Loss: 0.2119, Aux Loss: 2.6315, Grad Norm: 1.8098, Train Acc: 95.48%, Test Acc: 95.46%

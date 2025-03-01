@@ -1,0 +1,21 @@
+
+Epoch [1/100], Main Loss: 0.3211, Auxiliary Loss: 3.1309, Grad Norm: 1.5835
+Epoch [2/100], Main Loss: 0.2637, Auxiliary Loss: 1.1334, Grad Norm: 4.4997
+Epoch [3/100], Main Loss: 0.2689, Auxiliary Loss: 1.0094, Grad Norm: 5.5804
+Epoch [4/100], Main Loss: 0.2758, Auxiliary Loss: 0.9927, Grad Norm: 6.0316
+Epoch [5/100], Main Loss: 0.2752, Auxiliary Loss: 1.0018, Grad Norm: 5.9925
+Epoch [6/100], Main Loss: 0.2770, Auxiliary Loss: 0.9894, Grad Norm: 5.7889
+Epoch [7/100], Main Loss: 0.2776, Auxiliary Loss: 0.9697, Grad Norm: 5.7289
+Epoch [8/100], Main Loss: 0.2786, Auxiliary Loss: 0.9174, Grad Norm: 5.9310
+Epoch [9/100], Main Loss: 0.2813, Auxiliary Loss: 0.8598, Grad Norm: 6.1299
+Epoch [10/100], Main Loss: 0.2851, Auxiliary Loss: 0.7649, Grad Norm: 6.6956
+Epoch [11/100], Main Loss: 0.2896, Auxiliary Loss: 0.6800, Grad Norm: 7.2218
+Epoch [12/100], Main Loss: 0.2962, Auxiliary Loss: 0.5863, Grad Norm: 7.7801
+Epoch [13/100], Main Loss: 0.2993, Auxiliary Loss: 0.4941, Grad Norm: 8.4499
+Epoch [14/100], Main Loss: 0.3038, Auxiliary Loss: 0.3754, Grad Norm: 9.3314
+Epoch [15/100], Main Loss: 0.3074, Auxiliary Loss: 0.2942, Grad Norm: 10.1859
+Epoch [16/100], Main Loss: 0.3072, Auxiliary Loss: 0.2240, Grad Norm: 10.6427
+Epoch [17/100], Main Loss: 0.3119, Auxiliary Loss: 0.1245, Grad Norm: 11.6327
+Epoch [18/100], Main Loss: 0.3125, Auxiliary Loss: 0.0575, Grad Norm: 12.4526
+Epoch [19/100], Main Loss: 0.3143, Auxiliary Loss: -0.0234, Grad Norm: 13.3099
+Epoch [20/100], Main Loss: 0.3184, Auxiliary Loss: -0.0725, Grad Norm: 14.0433

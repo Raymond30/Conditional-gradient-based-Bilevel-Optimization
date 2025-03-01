@@ -1,0 +1,24 @@
+2025-02-19 23:41:37,900 INFO    MainThread:3032702 [wandb_setup.py:_flush():68] Current SDK version is 0.19.6
+2025-02-19 23:41:37,901 INFO    MainThread:3032702 [wandb_setup.py:_flush():68] Configure stats pid to 3032702
+2025-02-19 23:41:37,901 INFO    MainThread:3032702 [wandb_setup.py:_flush():68] Loading settings from /home/jz24694/.config/wandb/settings
+2025-02-19 23:41:37,901 INFO    MainThread:3032702 [wandb_setup.py:_flush():68] Loading settings from /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/settings
+2025-02-19 23:41:37,901 INFO    MainThread:3032702 [wandb_setup.py:_flush():68] Loading settings from environment variables
+2025-02-19 23:41:37,901 INFO    MainThread:3032702 [wandb_init.py:setup_run_log_directory():637] Logging user logs to /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_234137-1lvk3ldu/logs/debug.log
+2025-02-19 23:41:37,901 INFO    MainThread:3032702 [wandb_init.py:setup_run_log_directory():638] Logging internal logs to /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_234137-1lvk3ldu/logs/debug-internal.log
+2025-02-19 23:41:37,901 INFO    MainThread:3032702 [wandb_init.py:init():756] calling init triggers
+2025-02-19 23:41:37,902 INFO    MainThread:3032702 [wandb_init.py:init():761] wandb.init called with sweep_config: {'optimization.ema_decay': 0.09083406832956156, 'optimization.lambda_aux': 0.4010703554637782}
+config: {'mlp': {'hidden_dim': 256, 'activation': 'relu', 'dropout': 0.1, 'batch_norm': True}, 'train': {}, 'run_name': None, 'wandb': {'log': True, 'project_name': 'bilevel', 'entity': 'zjzwin', 'resume': False, 'tags': None}, 'rseed': 99, 'batch_size': 256, 'epochs': 100, 'learning_rate': 0.001, 'weight_decay': 0.01, 'optimization': {'lambda_aux': 0.2, 'ema_decay': 0.05}, '_wandb': {}}
+2025-02-19 23:41:37,902 INFO    MainThread:3032702 [wandb_init.py:init():789] starting backend
+2025-02-19 23:41:39,137 INFO    MainThread:3032702 [wandb_init.py:init():793] sending inform_init request
+2025-02-19 23:41:39,183 INFO    MainThread:3032702 [backend.py:_multiprocessing_setup():97] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2025-02-19 23:41:39,184 INFO    MainThread:3032702 [wandb_init.py:init():808] backend started and connected
+2025-02-19 23:41:39,185 INFO    MainThread:3032702 [wandb_run.py:_config_callback():1253] config_cb None None {'optimization.ema_decay': 0.09083406832956156, 'optimization.lambda_aux': 0.4010703554637782}
+2025-02-19 23:41:39,187 INFO    MainThread:3032702 [wandb_init.py:init():901] updated telemetry
+2025-02-19 23:41:39,216 INFO    MainThread:3032702 [wandb_init.py:init():936] communicating run to backend with 90.0 second timeout
+2025-02-19 23:41:39,413 INFO    MainThread:3032702 [wandb_init.py:init():994] starting run threads in backend
+2025-02-19 23:41:43,174 INFO    MainThread:3032702 [wandb_run.py:_console_start():2385] atexit reg
+2025-02-19 23:41:43,174 INFO    MainThread:3032702 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2025-02-19 23:41:43,174 INFO    MainThread:3032702 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2025-02-19 23:41:43,174 INFO    MainThread:3032702 [wandb_run.py:_redirect():2325] Redirects installed.
+2025-02-19 23:41:43,177 INFO    MainThread:3032702 [wandb_init.py:init():1036] run started, returning control to user process
+2025-02-19 23:41:49,366 WARNING MsgRouterThr:3032702 [router.py:message_loop():75] message_loop has been closed
