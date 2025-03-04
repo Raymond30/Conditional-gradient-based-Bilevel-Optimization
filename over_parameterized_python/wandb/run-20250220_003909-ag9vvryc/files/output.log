@@ -1,0 +1,6 @@
+
+Epoch [1/100], Main Loss: 0.3022, Aux Loss: 3.5292, Grad Norm: 1.1843, Train Acc: 94.87%, Test Acc: 94.73%
+Epoch [2/100], Main Loss: 0.2044, Aux Loss: 2.4372, Grad Norm: 1.8188, Train Acc: 94.95%, Test Acc: 94.85%
+Epoch [3/100], Main Loss: 0.2047, Aux Loss: 2.4358, Grad Norm: 1.8941, Train Acc: 94.57%, Test Acc: 94.31%
+Epoch [4/100], Main Loss: 0.2095, Aux Loss: 2.4947, Grad Norm: 1.9210, Train Acc: 95.84%, Test Acc: 95.71%
+Epoch [5/100], Main Loss: 0.2084, Aux Loss: 2.5427, Grad Norm: 1.9211, Train Acc: 95.38%, Test Acc: 95.24%

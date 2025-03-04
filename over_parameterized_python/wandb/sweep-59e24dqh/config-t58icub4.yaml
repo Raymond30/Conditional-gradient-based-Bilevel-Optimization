@@ -1,0 +1,6 @@
+wandb_version: 1
+
+optimization.ema_decay:
+  value: 0.06016676676359296
+optimization.lambda_aux:
+  value: 0.12041298846538064

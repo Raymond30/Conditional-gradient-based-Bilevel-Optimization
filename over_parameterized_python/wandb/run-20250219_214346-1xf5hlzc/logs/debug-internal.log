@@ -1,0 +1,35 @@
+2025-02-19 21:43:47,822 INFO    StreamThr :3002907 [internal.py:wandb_internal():83] W&B internal server running at pid: 3002907, started at: 2025-02-19 21:43:47.821099
+2025-02-19 21:43:47,830 INFO    WriterThread:3002907 [datastore.py:open_for_write():87] open: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_214346-1xf5hlzc/run-1xf5hlzc.wandb
+2025-02-19 21:43:48,068 INFO    SenderThread:3002907 [dir_watcher.py:__init__():211] watching files in: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_214346-1xf5hlzc/files
+2025-02-19 21:43:48,068 INFO    SenderThread:3002907 [sender.py:_start_run_threads():1150] run started: 1xf5hlzc with start time 1740023027.817425
+2025-02-19 21:43:48,094 INFO    HandlerThread:3002907 [system_monitor.py:start():187] Starting system monitor
+2025-02-19 21:43:48,095 INFO    SystemMonitor:3002907 [system_monitor.py:_start():151] Starting system asset monitoring threads
+2025-02-19 21:43:48,095 INFO    HandlerThread:3002907 [system_monitor.py:probe():207] Collecting system info
+2025-02-19 21:43:48,096 INFO    SystemMonitor:3002907 [interfaces.py:start():186] Started cpu monitoring
+2025-02-19 21:43:48,098 INFO    SystemMonitor:3002907 [interfaces.py:start():186] Started disk monitoring
+2025-02-19 21:43:48,100 INFO    SystemMonitor:3002907 [interfaces.py:start():186] Started gpu monitoring
+2025-02-19 21:43:48,103 INFO    SystemMonitor:3002907 [interfaces.py:start():186] Started memory monitoring
+2025-02-19 21:43:48,104 INFO    SystemMonitor:3002907 [interfaces.py:start():186] Started network monitoring
+2025-02-19 21:43:48,227 INFO    HandlerThread:3002907 [system_monitor.py:probe():217] Finished collecting system info
+2025-02-19 21:43:48,227 INFO    HandlerThread:3002907 [system_monitor.py:probe():220] Publishing system info
+2025-02-19 21:43:49,071 INFO    Thread-12 :3002907 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_214346-1xf5hlzc/files/conda-environment.yaml
+2025-02-19 21:43:51,662 INFO    HandlerThread:3002907 [system_monitor.py:probe():222] Finished publishing system info
+2025-02-19 21:43:51,669 INFO    SenderThread:3002907 [sender.py:_save_file():1419] saving file wandb-metadata.json with policy now
+2025-02-19 21:43:51,969 INFO    wandb-upload_0:3002907 [upload_job.py:push():130] Uploaded file /tmp/tmpff16ab1wwandb/uhysozza-wandb-metadata.json
+2025-02-19 21:43:52,068 INFO    Thread-12 :3002907 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_214346-1xf5hlzc/files/conda-environment.yaml
+2025-02-19 21:43:52,069 INFO    Thread-12 :3002907 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_214346-1xf5hlzc/files/requirements.txt
+2025-02-19 21:43:52,069 INFO    Thread-12 :3002907 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_214346-1xf5hlzc/files/wandb-metadata.json
+2025-02-19 21:43:59,095 INFO    SenderThread:3002907 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-19 21:44:00,072 INFO    Thread-12 :3002907 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_214346-1xf5hlzc/files/wandb-summary.json
+2025-02-19 21:44:00,073 INFO    Thread-12 :3002907 [dir_watcher.py:_on_file_created():271] file/dir created: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_214346-1xf5hlzc/files/output.log
+2025-02-19 21:44:02,073 INFO    Thread-12 :3002907 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_214346-1xf5hlzc/files/output.log
+2025-02-19 21:44:03,531 INFO    SenderThread:3002907 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-19 21:44:04,074 INFO    Thread-12 :3002907 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_214346-1xf5hlzc/files/wandb-summary.json
+2025-02-19 21:44:06,075 INFO    Thread-12 :3002907 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_214346-1xf5hlzc/files/output.log
+2025-02-19 21:44:07,999 INFO    SenderThread:3002907 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-19 21:44:08,076 INFO    Thread-12 :3002907 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_214346-1xf5hlzc/files/wandb-summary.json
+2025-02-19 21:44:10,079 INFO    Thread-12 :3002907 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_214346-1xf5hlzc/files/output.log
+2025-02-19 21:44:12,430 INFO    SenderThread:3002907 [sender.py:_save_file():1419] saving file wandb-summary.json with policy end
+2025-02-19 21:44:13,080 INFO    Thread-12 :3002907 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_214346-1xf5hlzc/files/wandb-summary.json
+2025-02-19 21:44:14,081 INFO    Thread-12 :3002907 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/jz24694/LLM/CG-BiO-python/over_parameterized_python/wandb/run-20250219_214346-1xf5hlzc/files/output.log
+2025-02-19 21:44:17,075 INFO    MainThread:3002907 [internal.py:handle_exit():73] Internal process exited

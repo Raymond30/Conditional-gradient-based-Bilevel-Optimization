@@ -1,0 +1,52 @@
+defaults:
+  - model
+  - train: default
+  - override hydra/hydra_logging: disabled
+  - _self_
+
+hydra:
+  output_subdir: null
+  run:
+    dir: logs
+
+run_name: null
+
+wandb:
+  log: false
+  project_name: bilevel
+  entity: zjzwin
+  resume: false
+  tags: null
+
+rseed: 99
+
+# Fixed parameters (not being swept)
+batch_size: 256
+epochs: 100
+learning_rate: 0.01
+weight_decay: 0.01
+
+# Full batch training (use entire training set as a single batch)
+full_batch: false
+
+# Auxiliary loss type
+auxiliary_loss: "lipschitz"  # Options: "lipschitz", "l2_norm", "test_loss"
+
+# Training mode
+mode: "bilevel"  # can be "bilevel", "standard", or "dbgd"
+
+# Parameters being swept (only used when mode="bilevel")
+optimization:
+  # Bilevel optimization parameters
+  lambda_aux: 0.2  # default value, will be overridden by sweep
+  ema_decay: 0.05  # default value, will be overridden by sweep
+  
+  # DBGD parameters (only used when mode="dbgd")
+  dbgd:
+    alpha: 1.0
+    beta: 1.0
+    stepsize: 1e-1
+    phi_type: "DBGD"  # can be "DBGD" or "BLOOP"
+      
+  baseline:
+    aux_weight: 0.5

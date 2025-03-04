@@ -1,0 +1,8 @@
+Error executing job with overrides: ['++wandb.log=true', '++rseed=99']
+Traceback (most recent call last):
+  File "Bloop.py", line 115, in main
+    g_aux = [p.grad.clone() for p in model.parameters()]
+  File "Bloop.py", line 115, in <listcomp>
+    g_aux = [p.grad.clone() for p in model.parameters()]
+AttributeError: 'NoneType' object has no attribute 'clone'
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

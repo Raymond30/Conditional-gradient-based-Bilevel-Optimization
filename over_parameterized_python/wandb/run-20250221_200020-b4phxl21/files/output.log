@@ -1,0 +1,8 @@
+EMA decay: $(optimization.ema_decay)
+Lambda aux: $(optimization.lambda_aux)
+Error executing job with overrides: ['optimization.lambda_aux="$(optimization.lambda_aux)"', 'optimization.ema_decay="$(optimization.ema_decay)"', 'wandb.log=true', 'rseed=99']
+Traceback (most recent call last):
+  File "Bloop.py", line 182, in main
+    p.grad = g_m + lambda_aux * proj_g_aux
+TypeError: only integer tensors of a single element can be converted to an index
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.

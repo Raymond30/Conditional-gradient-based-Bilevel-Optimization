@@ -1,0 +1,4 @@
+
+Epoch [1/100], Main Loss: 0.3007, Auxiliary Loss: 3.5180, Grad Norm: 1.3551
+Epoch [2/100], Main Loss: 0.2168, Auxiliary Loss: 1.9545, Grad Norm: 2.7956
+Epoch [3/100], Main Loss: 0.2187, Auxiliary Loss: 1.9060, Grad Norm: 3.1269

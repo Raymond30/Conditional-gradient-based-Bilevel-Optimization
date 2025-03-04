@@ -1,0 +1,8 @@
+Error executing job with overrides: ['++wandb.log=true', '++rseed=99']
+Traceback (most recent call last):
+  File "Bloop.py", line 109, in main
+    g_aux = torch.autograd.grad(loss_aux, model.parameters(), create_graph=True)
+  File "/home/jz24694/anaconda3/envs/dreamgaussian4d2/lib/python3.8/site-packages/torch/autograd/__init__.py", line 303, in grad
+    return Variable._execution_engine.run_backward(  # Calls into the C++ engine to run the backward pass
+RuntimeError: One of the differentiated Tensors appears to not have been used in the graph. Set allow_unused=True if this is the desired behavior.
+Set the environment variable HYDRA_FULL_ERROR=1 for a complete stack trace.
