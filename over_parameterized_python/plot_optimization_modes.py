@@ -5,7 +5,7 @@ import os
 def get_lower_gradient_norm(metrics, mode_label):
     """Get the appropriate gradient norm based on the optimization mode."""
     if mode_label == 'DBGD' and 'grad_f_norm_values' in metrics:
-        return metrics['grad_f_norm_values']
+        return metrics['g_norms']
     return metrics['g_norms']
 
 def create_comparison_plot(metrics_list, metric_name, title, ylabel, labels, use_log=True, filename=None):
@@ -67,7 +67,7 @@ def main():
             },
             {
                 'metric': 'lower_gradient_norm',
-                'title': 'Lower Gradient Norm Comparison',
+                'title': 'Lower Gradient (wrt cross entropy loss) Norm Comparison',
                 'ylabel': '||grad||²',
                 'use_log': True,
                 'filename': 'optimization_mode_plots/lower_gradient_norm_comparison.png'

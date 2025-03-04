@@ -48,7 +48,7 @@ def lipschitz_loss(model):
 
 def l2_norm_loss(model):
     total = 0.5 * sum(torch.sum(layer.weight ** 2) for layer in [model.fc1, model.fc2, model.fc3])
-    print(f"L2 norm loss value: {total.item()}")  # Debug print
+    # print(f"L2 norm loss value: {total.item()}")  # Debug print
     return total
 
 def test_loss(model, test_loader, criterion, device):
@@ -200,12 +200,13 @@ def main(cfg):
                 # Modify DBGD_step to use the selected auxiliary loss
                 model.zero_grad()
                 outputs = model(images)
-                loss_main = criterion(outputs, labels)
-                loss_aux = aux_loss_fn(model)
+                loss_main = aux_loss_fn(model)
+                loss_aux = criterion(outputs, labels)
                 
                 # Compute gradient of main loss
                 loss_main.backward(retain_graph=True)
-                grad_f_x = torch.cat([p.grad.view(-1) for p in model.parameters()]).cpu().numpy()
+                grad_f_x = torch.cat([p.grad.view(-1) if p.grad is not None else torch.zeros_like(p).view(-1) 
+                                    for p in model.parameters()]).cpu().numpy()
                 grad_f_norm_sq = np.dot(grad_f_x, grad_f_x)
                 # Compute gradient of auxiliary loss
                 model.zero_grad()
@@ -214,10 +215,7 @@ def main(cfg):
                 grad_g_x = torch.cat([p.grad.view(-1) if p.grad is not None else torch.zeros_like(p).view(-1) 
                                     for p in model.parameters()]).cpu().numpy()
                 
-                # Debug prints
-                if cfg.auxiliary_loss == "l2_norm":
-                    print(f"Raw gradients: {[p.grad.norm().item() if p.grad is not None else 0.0 for p in model.parameters()]}")
-                    print(f"grad_g_x norm: {np.linalg.norm(grad_g_x)}")
+         
                 
                 # DBGD algorithm parameters
                 alpha = cfg.optimization.dbgd.alpha
@@ -330,9 +328,9 @@ def main(cfg):
                         for p in model.parameters():
                             if p.grad is not None:
                                 # Debug print for gradient and parameter values
-                                if epoch == 0 and global_step == 0:
-                                    print(f"Standard mode - Param shape: {p.shape}, Grad norm: {torch.norm(p.grad).item()}, Param norm: {torch.norm(p.data).item()}")
-                                    print(f"Learning rate: {cfg.learning_rate}")
+                                # if epoch == 0 and global_step == 0:
+                                    # print(f"Standard mode - Param shape: {p.shape}, Grad norm: {torch.norm(p.grad).item()}, Param norm: {torch.norm(p.data).item()}")
+                                    # print(f"Learning rate: {cfg.learning_rate}")
                                 p.data.add_(p.grad, alpha=-cfg.learning_rate * 100)  # Increase learning rate by 100x for testing
                     
                     # Compute parameter difference norm after update
@@ -454,17 +452,17 @@ def main(cfg):
         # Update print statements to include parameter difference norm
         if cfg.mode == "dbgd":
             print(f"Epoch [{epoch+1}/{cfg.epochs}], "
-                  f"Main Loss: {main_losses[-1]:.4f}, "
-                  f"Aux Loss: {aux_losses[-1]:.4f}, "
-                  f"Grad f Norm: {grad_f_norm_values[-1]:.4f}, "
-                  f"Grad g Norm: {g_norms[-1]:.4f}, "  # Renamed from g_main_norms
+                  f"Aux Loss: {main_losses[-1]:.4f}, " # this is the aux 
+                  f"CE Loss: {aux_losses[-1]:.4f}, " # this is cross entropy
+                  f"Grad f Norm: {grad_f_norm_values[-1]:.4f}, " # grad norm of aux loss (e.g. lipschitz)
+                  f"Grad g Norm: {g_norms[-1]:.4f}, "  # grad norm of cross entropy
                   f"Weight: {weight_values[-1]:.4f}, "
                   f"Param Diff Norm: {param_diff_norms[-1]:.4f}, "
                   f"Train Acc: {train_acc:.2f}%, "
                   f"Test Acc: {test_acc:.2f}%")
         else:
             print(f"Epoch [{epoch+1}/{cfg.epochs}], "
-                  f"Main Loss: {main_losses[-1]:.4f}, "
+                  f"CE Loss: {main_losses[-1]:.4f}, "
                   f"Aux Loss: {aux_losses[-1]:.4f}, "
                   f"Grad Norm: {g_norms[-1]:.4f}, "  # Renamed from g_main_norms
                   f"Param Diff Norm: {param_diff_norms[-1]:.4f}, "
@@ -472,40 +470,50 @@ def main(cfg):
                   f"Test Acc: {test_acc:.2f}%")
 
     # Create a directory for plots based on the mode
-    plot_dir = f"plots_{cfg.mode}_{cfg.auxiliary_loss}"
+    if cfg.mode == "baseline":
+        # For baseline mode, include the aux_weight in the directory name
+        plot_dir = f"plots_{cfg.mode}_{cfg.auxiliary_loss}_weight{cfg.optimization.baseline.aux_weight}"
+    else:
+        plot_dir = f"plots_{cfg.mode}_{cfg.auxiliary_loss}"
     os.makedirs(plot_dir, exist_ok=True)
     
     # Save metrics data for comparison plots
     metrics_data = {
-        'main_losses': main_losses,
-        'aux_losses': aux_losses,
-        'g_norms': g_norms,  # Renamed from g_main_norms
+        'main_losses': aux_losses if cfg.mode == "dbgd" else main_losses,
+        'aux_losses': main_losses if cfg.mode == "dbgd" else aux_losses,
+        'g_norms': g_norms,
         'grad_f_norm_values': grad_f_norm_values if cfg.mode == "dbgd" else [],
         'weight_values': weight_values if cfg.mode == "dbgd" else [],
         'param_diff_norms': param_diff_norms,
-        'auxiliary_loss_type': cfg.auxiliary_loss
+        'train_accuracies': train_accuracies,
+        'test_accuracies': test_accuracies,
+        'auxiliary_loss_type': cfg.auxiliary_loss,
+        'mode': cfg.mode
     }
+    if cfg.mode == "baseline":
+        metrics_data['aux_weight'] = cfg.optimization.baseline.aux_weight
+
     np.save(f'{plot_dir}/metrics_{cfg.auxiliary_loss}.npy', metrics_data)
     
     # Different plotting for DBGD and other methods
     if cfg.mode == "dbgd":
-        # 1. Main Loss Plot
+   
         plt.figure(figsize=(10, 6))
         plt.plot(range(1, len(main_losses) + 1), main_losses, 'b-', linewidth=2)
         plt.xlabel('Epoch')
-        plt.ylabel('Main Loss')
-        plt.title(f'Main Loss vs Epoch (Aux: {cfg.auxiliary_loss})')
+        plt.ylabel('Auxiliary Loss')
+        plt.title(f'Auxiliary Loss (Upper level) vs Epoch (Aux: {cfg.auxiliary_loss})')
         plt.grid(True)
         plt.yscale('log')
         plt.savefig(f'{plot_dir}/main_loss.png', dpi=300, bbox_inches='tight')
         plt.close()
         
-        # 2. Auxiliary Loss Plot
+
         plt.figure(figsize=(10, 6))
         plt.plot(range(1, len(aux_losses) + 1), aux_losses, 'r-', linewidth=2)
         plt.xlabel('Epoch')
-        plt.ylabel('Auxiliary Loss')
-        plt.title(f'Auxiliary Loss ({cfg.auxiliary_loss}) vs Epoch')
+        plt.ylabel('Main Loss')
+        plt.title(f'Main Loss (Cross Entropy) vs Epoch')
         plt.grid(True)
         plt.yscale('log')
         plt.savefig(f'{plot_dir}/aux_loss.png', dpi=300, bbox_inches='tight')
